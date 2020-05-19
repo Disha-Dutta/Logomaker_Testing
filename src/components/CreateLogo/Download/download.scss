@@ -1,0 +1,69 @@
+@import '../../colors.scss';
+
+%button {
+    width: 100%;
+    height: 64px !important;
+    box-shadow: none;
+    font-size: 16px;
+    background: transparent !important;
+}
+
+
+.theme--light.v-divider {
+    border-color: $sea-green !important; 
+    opacity: .30;
+}
+
+
+
+.download{ 
+    height: 100vh;
+    &__container{
+        position: relative;
+        top: 40%;
+        transform: translateY(-50%);
+        &__head{
+            color: $grey-light-2;
+            font-weight: 200;
+        }
+        &__button-png{
+            @extend %button;
+            border: 1px solid $orange;
+            color: $orange; 
+        }
+        &__button-png:hover{
+            background-color: $orange-dark !important;
+            color: white;
+            transition: .5s;
+        }
+        &__button-jpg{
+            @extend %button;
+            color: $orange;
+        }
+        &__button-jpg:hover{
+            background-color: $orange-dark !important;
+            color: white;
+            transition: .5s;
+        }
+        &__button-svg{
+            @extend %button;
+            border: 1px solid $orange;
+            color: $orange; 
+        }
+        &__button-svg:hover{
+            background-color: $orange-dark !important;
+            color: white;
+            transition: .5s;
+        }
+        &__button-tpng{
+            @extend %button;
+            border: 1px solid $orange;
+            color: $orange; 
+        }
+        &__button-tpng:hover{
+            background-color: $orange-dark !important;
+            color: white;
+            transition: .5s;
+        }
+    }
+}
